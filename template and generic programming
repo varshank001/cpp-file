@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+template <class T >
+class Example{
+                T a;
+                T b;
+                public:
+                        Example (T x, T y)
+                        {
+                         a=x;
+                         b=y;
+                        }
+                void display(){
+                    cout<<a<<endl<<b<<endl;
+                }
+};
+int main() { 
+    Example<int> obj1(23,45);
+    obj1.display();
+    Example<float> obj2(2.3,5.5);
+    obj2.display();  
+    return 0;
+}
