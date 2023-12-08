@@ -1,0 +1,330 @@
+print("ram is a boy")
+a = 20
+b = 30
+c = a+b
+print(c)
+
+conda install numpy
+
+print(type(a))
+
+pwd
+
+
+mobile_companies=['apple','samsung','redmi','oppo','vivo']
+mobile_companies.append('nokia')
+
+mobile_companies=['apple','samsung','redmi','oppo','vivo']
+mobile_companies.append('nokia')
+
+mobile_companies=['apple','samsung','redmi','oppo','vivo']
+mobile_companies.append('nokia')
+print(mobile_companies)
+mobile_companies.insert(0,'lenovo')
+print(mobile_companies)
+mobile_companies.insert(4,'htc')
+print(mobile_companies)
+
+mobile_companies=['apple','samsung','redmi','oppo','vivo']
+mobile_companies.append('nokia')
+del mobile_companies[2]
+print(mobile_companies)
+print(mobile_companies[::-1])
+
+X="DAMAN"
+Y="daman"
+X==Y
+X.lower()==Y.lower()
+
+x = 10
+if x==10:
+    print("item not found")
+print("the value is not equal to the given")
+
+x = "jai shree ram"
+if x == "jai shree ram":
+    print("yes")
+    
+
+print("RAM")
+    
+
+relegion = True
+age= True
+caste = 1
+if relegion and age and caste:
+    print("jai shree ram")
+else:
+    print("muslim ho")
+
+class Bike:
+    def _init_(self,type1,x1,y1,z1):
+        self.type=type1
+        self.x=x1
+        self.y=y1
+        self.z=z1
+        print("objects are created")
+        
+daman = Bike(type1 = "road",x1 = 2,y1 = 5,z1 =  6)
+print(daman.x)
+sachin = Bike("Mountaion", 1, 2, 3)
+
+
+print(daman.type)
+
+class Bike:
+    def _init_(self,type1,x1,y1,z1):
+        self.type=type1
+        self.x=x1
+        self.y=y1
+        self.z=z1
+        print("objects are created")
+daman = Bike()
+print(daman.x)
+
+class dog:
+    species = 'mammal'
+    def _init_(self,breed,name):
+        self.breed = breed
+        self.name = name
+    
+
+snow = dog('la','man')
+snow1 = dog('rab','mana')
+print(snow.breed)
+print(snow.species)
+           
+
+class dog:
+    species = 'mammal'
+    def _init_(self,breed,name):
+        self.breed = breed
+        self.name = name
+
+snow = dog()
+snow1 = dog()
+print(snow.breed)
+print(snow.species)
+           
+
+conda install matplotlib
+
+
+conda update -n base -c defailts conda
+
+import matplotlib.pyplot as plt
+
+squares = [1,4,9,16,25]
+plt.plot(squares)
+plt.show()
+
+plt.plot(squares,linewidth=10)
+plt.show
+
+a = 5
+a
+print(a)
+
+input=(1,2,3,4,5)
+squares = (1,4,9,16,25)
+states=(1,2,3,4,5)
+cubes = (1,8,27,64,125)
+plt.plot(input,squares,linewidth=8,c="green")
+plt.plot(input,states,linewidth=8,c="blue")
+plt.plot(input,cubes,linewidth=8,c="orange")
+plt.show()
+
+plt.scatter(1,45)
+plt.show()
+
+plt.scatter(1,34)
+plt.show()
+
+import matplotlib.pyplot as plt
+
+plt.scatter(1,24)
+plt.show()
+
+x=[1,2,3,4,5]
+y=[6,7,8,9,10]
+plt.scatter(x,y,s=100)
+plt.show()
+
+x=[1,1.5,3.0,4.0,5]
+y=[6,9,6.5,9,6]
+plt.scatter(x,y,s=100)
+plt.plot(x,y)
+plt.show()
+
+print(x)
+y=[x**2 for x in x]
+print (y)
+
+x=list(range(1,10))
+x
+
+x=list(range(1,14))
+y1=[x**3 for x in x]
+y=[x**2 for x in x]
+plt.scatter(x,y,s=100)
+plt.scatter(x,y1,c=y1,cmap=plt.cm.blue,s=390)
+plt.plot(x,y,c="red")
+plt.plot(x,y1 , c="blue")
+print(y)
+
+plt.scatter(x,y,c=y,cmap=plt.cm.blues,s=50)
+plt.show()
+
+
+pip install pygal
+
+from random import randint
+class Die():
+    
+    def _init_(self,num_sides=6):
+        self.num_sides=num_sides
+    
+    def roll(self):
+        return randint(1,self.num_sides)
+    
+die = Die()
+results = []
+
+for roll_num in range(15):
+    result = die.roll()
+    results.append(result)
+print(results)
+
+
+conda install numpy
+
+conda install pandas
+
+import pandas as pd
+import numpy as np
+
+record = [(1,"Pranav","Python","Personal"),
+         (2,"Akhil","Python","Chip"),
+         (3,"Stephen","C++","Personal"),
+         (4,"Zoya","React","Web Logo"),
+         (5,"Lediana","c++","Gameloft"),
+         (6,"Varshank Saini","Python","Intern Project"),
+         (7,"Harsh Sharma","Java","Personal"),
+         (8,"Christopher","DSA Java","Confidential"),
+         (9,"Saheja","Python","Security Shell"),
+         (10,"Mark Taylor","Digital Marketing","Mug Designing")]
+df=pd.DataFrame(record,columns=["S_No","Name","Language","Project"])
+df
+
+df.max()
+df
+
+df.Name
+df
+
+df[df.S_No==df.S_No.max]
+df
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+# Assuming the Iris dataset is available in a CSV file named 'iris.csv'
+iris_data = pd.read_csv('iris.csv')
+# Display the first few rows of the dataset
+print(iris_data.head())
+
+# Check the data types and missing values, if any
+print(iris_data.info())
+
+# Summary statistics of the numerical columns
+print(iris_data.describe())
+
+# Count of each species in the dataset
+print(iris_data['species'].value_counts())
+# Scatter plot for the relationship between sepal length and sepal width
+sns.scatterplot(x='sepal_length', y='sepal_width', hue='species', data=iris_data)
+plt.title('Scatter plot: Sepal Length vs Sepal Width')
+plt.show()
+
+# Scatter plot for the relationship between petal length and petal width
+sns.scatterplot(x='petal_length', y='petal_width', hue='species', data=iris_data)
+plt.title('Scatter plot: Petal Length vs Petal Width')
+plt.show()
+
+# Pairplot to visualize relationships between all numerical columns
+sns.pairplot(iris_data, hue='species')
+plt.title('Pairplot of all numerical columns')
+plt.show()
+
+# Box plot for each species and their sepal length
+sns.boxplot(x='species', y='sepal_length', data=iris_data)
+plt.title('Box plot: Sepal Length by Species')
+plt.show()
+
+# Box plot for each species and their petal length
+sns.boxplot(x='species', y='petal_length', data=iris_data)
+plt.title('Box plot: Petal Length by Species')
+plt.show()
+
+# Violin plot for each species and their sepal width
+sns.violinplot(x='species', y='sepal_width', data=iris_data)
+plt.title('Violin plot: Sepal Width by Species')
+plt.show()
+
+# Violin plot for each species and their petal width
+sns.violinplot(x='species', y='petal_width', data=iris_data)
+plt.title('Violin plot: Petal Width by Species')
+plt.show()
+# Compute the correlation matrix
+correlation_matrix = iris_data.corr()
+
+# Plot the correlation heatmap
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
+plt.title('Correlation Heatmap')
+plt.show()
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Load the Iris dataset from a URL
+url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
+column_names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class']
+iris_data = pd.read_csv(url, header=None, names=column_names)
+# Display the first few rows of the dataset
+print(iris_data.head())
+
+# Check the summary statistics
+print(iris_data.describe())
+
+# Check the number of samples in each class
+print(iris_data['class'].value_counts())
+# Create subplots for each feature
+fig, axes = plt.subplots(2, 2, figsize=(10, 8))
+
+# Plot histograms for each feature
+for i, column in enumerate(column_names[:-1]):
+    row = i // 2
+    col = i % 2
+    axes[row, col].hist(iris_data[column], bins=15, color='skyblue', edgecolor='black')
+    axes[row, col].set_title(column)
+
+# Adjust layout and display the plot
+plt.tight_layout()
+plt.show()
+# Create a scatter matrix for the data
+pd.plotting.scatter_matrix(iris_data.drop('class', axis=1), c='r', figsize=(10, 10), marker='o', hist_kwds={'bins': 15})
+plt.show()
+# Calculate the correlation matrix
+correlation_matrix = iris_data.drop('class', axis=1).corr()
+
+# Create a heatmap to visualize the correlation matrix
+plt.figure(figsize=(8, 6))
+plt.imshow(correlation_matrix, cmap='coolwarm', interpolation='nearest')
+plt.colorbar()
+plt.xticks(np.arange(len(column_names) - 1), column_names[:-1], rotation=45)
+plt.yticks(np.arange(len(column_names) - 1), column_names[:-1])
+plt.title('Correlation Matrix')
+plt.show()
